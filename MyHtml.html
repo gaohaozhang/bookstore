@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+<script type="text/javascript" src="style/js/page.js"></script> 
+<script type="text/javascript" language="javascript"> 
+    var page; 
+ 
+    window.onload = function () { 
+        if (document.getElementById('tbSeatList')) { 
+            page = new PagingClass(15, 'tbSeatList', 'bodyPaging'); 
+            document.getElementById('pageindex').innerHTML = page.pageIndex + 1 + ' / ' + page.pageCount; 
+        } 
+    }; 
+ 
+    function nextPage() { 
+        page.nextPage(); 
+        document.getElementById('pageindex').innerHTML = page.pageIndex + 1 + ' / ' + page.pageCount; 
+    } 
+ 
+    function prePage() { 
+        page.prePage(); 
+        document.getElementById('pageindex').innerHTML = page.pageIndex + 1 + ' / ' + page.pageCount; 
+    } 
+</script>
+</head>
+<body>
+<table class="base_table" id="tbSeatList"> 
+    <thead> 
+ 
+        <tr> 
+            <th> 
+                航空公司 
+            </th> 
+            <th> 
+                航线 
+            </th> 
+            <th> 
+                价格 
+            </th> 
+ 
+            <th> 
+                航班日期 
+            </th> 
+            <th> 
+                放位时间 
+            </th> 
+            <th> 
+                航班号 
+            </th> 
+            <th> 
+ 
+                放位数量 
+            </th> 
+            <th> 
+                记录编号 
+            </th> 
+            <th> 
+                操作 
+            </th> 
+        </tr> 
+    </thead> 
+ 
+    <tbody id="bodyPaging"> 
+         
+        <tr> 
+            <td> 
+                中国东方航空公司 
+            </td> 
+            <td> 
+                北京 
+                → 
+                上海 
+            </td> 
+            <td> 
+                <span class="base_price"><dfn>¥</dfn>339</span> 
+ 
+            </td> 
+            <td> 
+                2012-07-12 
+            </td> 
+            <td> 
+                2012-06-26 13:28 
+            </td> 
+            <td> 
+                MU8888  
+            </td> 
+ 
+            <td> 
+                2 
+            </td> 
+            <td> 
+                GBDDEE 
+            </td> 
+            <td> 
+                <a target="_blank" href=""> 
+                    查看</a> 
+ 
+            </td> 
+        </tr> 
+         
+        <tr> 
+            <td> 
+                中国东方航空公司 
+            </td> 
+            <td> 
+                上海 
+                → 
+                成都 
+            </td> 
+            <td> 
+ 
+                <span class="base_price"><dfn>¥</dfn>400</span> 
+            </td> 
+            <td> 
+                2012-07-09 
+            </td> 
+            <td> 
+                2012-06-26 13:25 
+            </td> 
+            <td> 
+ 
+                MU3333  
+            </td> 
+            <td> 
+                3 
+            </td> 
+            <td> 
+                EFGDE 
+            </td> 
+            <td> 
+                <a target="_blank" href=""> 
+ 
+                    查看</a> 
+            </td> 
+        </tr> 
+         
+        <tr> 
+            <td> 
+                中国东方航空公司 
+            </td> 
+            <td> 
+                上海 
+                → 
+                成都 
+            </td> 
+ 
+            <td> 
+                <span class="base_price"><dfn>¥</dfn>400</span> 
+            </td> 
+            <td> 
+                2012-07-12 
+            </td> 
+            <td> 
+                2012-06-26 13:23 
+            </td> 
+ 
+            <td> 
+                MU2345  
+            </td> 
+            <td> 
+                2 
+            </td> 
+            <td> 
+                PNR012 
+            </td> 
+            <td> 
+ 
+                <a target="_blank" href=""> 
+                    查看</a> 
+            </td> 
+        </tr> 
+         
+        <tr> 
+            <td> 
+                中国东方航空公司 
+            </td> 
+            <td> 
+ 
+                乌鲁木齐 
+                → 
+                哈尔滨 
+            </td> 
+            <td> 
+                <span class="base_price"><dfn>¥</dfn>360</span> 
+            </td> 
+            <td> 
+                2012-07-25 
+            </td> 
+            <td> 
+ 
+                2012-06-26 11:28 
+            </td> 
+            <td> 
+                mu0725  
+            </td> 
+            <td> 
+                3 
+            </td> 
+            <td> 
+                123 
+            </td> 
+ 
+            <td> 
+                <a target="_blank" href=""> 
+                    查看</a> 
+            </td> 
+        </tr> 
+         
+        <tr> 
+            <td> 
+                中国东方航空公司 
+            </td> 
+ 
+            <td> 
+                乌鲁木齐 
+                → 
+                哈尔滨 
+            </td> 
+            <td> 
+                <span class="base_price"><dfn>¥</dfn>360</span> 
+            </td> 
+            <td> 
+                2012-07-03 
+            </td> 
+ 
+            <td> 
+                2012-06-26 11:06 
+            </td> 
+            <td> 
+                mu0703  
+            </td> 
+            <td> 
+                2 
+            </td> 
+            <td> 
+ 
+                12 
+            </td> 
+            <td> 
+                <a target="_blank" href=""> 
+                    查看</a> 
+            </td> 
+        </tr> 
+         
+    </tbody> 
+</table> 
+ 
+<br> 
+<div style="float:right;"> 
+    <table border="0" cellpadding="0" cellspacing="0"> 
+        <tr> 
+            <td> 
+                <a href="javascript:void(0)" onclick="prePage();" style="color: Black;">上一页</a> 
+            </td> 
+            <td> 
+ 
+                  <span id="pageindex" style="font-weight: bold;"></span>   
+            </td> 
+            <td> 
+                <a href="javascript:void(0)" onclick="nextPage();" style="color: Black;">下一页</a> 
+            </td> 
+        </tr> 
+    </table> 
+</div>
+</body>
+</html>
